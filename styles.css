@@ -1,6 +1,7 @@
 :root {
   --red: #c0392b;
   --gray: lightgray;
+  --link: #fff;
   --black: #000;
 }
 
@@ -19,6 +20,11 @@ body {
 
 h1 {
   margin-top: 0;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
 }
 
 .align-left {
@@ -60,12 +66,30 @@ h1, h2, h3 {
 
 .content {
   padding: 30px;
+  max-width: 960px;
+  margin: auto;
+  color: white;
+  text-align: justify;
+}
+
+.content img {
+  width: 50%;
 }
 
 .content h1 {
+  color: white;
   display: inline-block;
-  border-bottom: 5px solid var(--red);
+  border-bottom: 5px solid white;
   padding-bottom: 10px;
+}
+
+.intro h1 {
+  color: var(--black);
+  border-bottom: 5px solid var(--red);
+}
+
+.intro p {
+  color: var(--black);
 }
 
 img {
@@ -74,7 +98,7 @@ img {
 }
 
 .country {
-  background-color: var(--gray);
+  background-color: var(--red);
 }
 
 label {
@@ -133,4 +157,26 @@ section {
 
 .back {
   background-color: var(--red);
+  flex-flow: column;
+}
+
+.back h1 {
+  text-transform: uppercase;
+  color: white;
+}
+
+.back a {
+  margin: 10px;
+  border-radius: 1000px;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back a:hover {
+  background-color: var(--link);
+  color: var(--red);
+  transition: all ease-in-out .3s;
 }
