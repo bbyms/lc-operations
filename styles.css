@@ -1,6 +1,6 @@
 :root {
   --red: #c0392b;
-  --gray: lightgray;
+  --gray: #666;
   --link: #fff;
   --black: #000;
 }
@@ -18,6 +18,35 @@ body {
   box-sizing: inherit;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Layout ---------------------------------------------------------------------- */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Typography ------------------------------------------------------------------ */
+
 h1 {
   margin-top: 0;
 }
@@ -26,6 +55,33 @@ a {
   color: var(--link);
   text-decoration: none;
 }
+
+.link {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  border-bottom: 2px solid white;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+p {
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+}
+
+label {
+  line-height: 1.6;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* Align images ---------------------------------------------------------------- */
 
 .align-left {
   float:left;
@@ -54,21 +110,13 @@ a {
   transform:translateX(0%) scale(1);
 }
 
-p {
-  line-height: 1.6;
-  font-weight: 300;
-}
-
-h1, h2, h3 {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 400;
-}
+/* Country content ------------------------------------------------------------- */
 
 .content {
   padding: 30px;
   max-width: 960px;
   margin: auto;
-  color: white;
+  color: var(--gray);
   text-align: justify;
 }
 
@@ -77,11 +125,13 @@ h1, h2, h3 {
 }
 
 .content h1 {
-  color: white;
+  color: black;
   display: inline-block;
-  border-bottom: 5px solid white;
+  border-bottom: 5px solid var(--red);
   padding-bottom: 10px;
 }
+
+/* Intro ----------------------------------------------------------------------- */
 
 .intro h1 {
   color: var(--black);
@@ -89,38 +139,16 @@ h1, h2, h3 {
 }
 
 .intro p {
-  color: var(--black);
+  color: var(--gray);
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
+/* Country --------------------------------------------------------------------- */
 
 .country {
-  background-color: var(--red);
+  background-color: white;
 }
 
-label {
-  line-height: 1.6;
-  font-family: 'Open Sans';
-  font-weight: 300;
-  text-transform: uppercase;
-}
-
-section {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 30px;
-}
+/* Cover ----------------------------------------------------------------------- */
 
 .cover {
   background-attachment: fixed;
@@ -141,19 +169,77 @@ section {
   padding: 20px 50px;
 }
 
+@media screen and (max-width: 600px) {
+  .cover h1  {
+    padding: 10px 20px;
+    font-size: 2rem;
+  }
+}
+
+/* Map ------------------------------------------------------------------------- */
+
 .map {
     background-color: var(--gray);
 }
 
-.map-highlighted div {
+/* Map highlighted ------------------------------------------------------------- */
+
+.map-highlighted {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.map-highlighted {
+  background-color: var(--red);
+  min-height: 0;
+  padding: 50px 0;
+}
+
+.map-highlighted .grid {
   text-align: center;
+  width: 960px;
+  margin: auto;
 }
 
 .map-highlighted h1 {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
   font-size: 4rem;
+  color: white;
 }
+
+@media screen and (max-width: 600px) {
+  .map-highlighted h1  {
+    margin-bottom: 0;
+  }
+}
+
+.map-highlighted label {
+  color: white;
+}
+
+.bangladesh {
+  background-image: url('images/bangladesh.svg');
+}
+
+.car {
+  background-image: url('images/car.svg');
+}
+
+.libya {
+  background-image: url('images/libya.svg');
+}
+
+.syria {
+  background-image: url('images/syria.svg');
+}
+
+.ssd {
+  background-image: url('images/ssd.svg');
+}
+
+/* Back cover ------------------------------------------------------------------ */
 
 .back {
   background-color: var(--red);
@@ -165,7 +251,7 @@ section {
   color: white;
 }
 
-.back a {
+.back .social-link {
   margin: 10px;
   border-radius: 1000px;
   width: 40px;
