@@ -1,6 +1,6 @@
 :root {
   --red: #c0392b;
-  --gray: #666;
+  --gray: #616161;
   --link: #fff;
   --black: #000;
 }
@@ -37,6 +37,11 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 30px;
+  align-items: flex-start;
+}
+
+figure {
+  margin: 0 0 20px 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -67,6 +72,20 @@ a {
 p {
   line-height: 1.6;
   font-weight: 300;
+  margin-top: 0;
+}
+
+.lead {
+  color: var(--black);
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+}
+
+figcaption {
+  color: var(--black);
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 h1, h2, h3 {
@@ -124,6 +143,10 @@ label {
   width: 50%;
 }
 
+.grid img {
+  width: 100%;
+}
+
 .content h1 {
   color: black;
   display: inline-block;
@@ -142,6 +165,10 @@ label {
   color: var(--gray);
 }
 
+.intro .lead {
+  color: var(--black);
+}
+
 /* Country --------------------------------------------------------------------- */
 
 .country {
@@ -152,9 +179,9 @@ label {
 
 .cover {
   background-attachment: fixed;
-  background-image: url('images/madagascar.JPG');
+  background-image: url('images/SSD.JPG');
   background-size: cover;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, .2);
   background-blend-mode: multiply;
   text-align: center;
   color: white;
@@ -179,7 +206,12 @@ label {
 /* Map ------------------------------------------------------------------------- */
 
 .map {
+    background-attachment: fixed;
     background-color: var(--gray);
+    background-image: url('images/WorldConOps@2x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Map highlighted ------------------------------------------------------------- */
@@ -237,6 +269,10 @@ label {
 
 .ssd {
   background-image: url('images/ssd.svg');
+}
+
+.yemen {
+  background-image: url('images/yemen.svg');
 }
 
 /* Back cover ------------------------------------------------------------------ */
