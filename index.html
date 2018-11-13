@@ -67,7 +67,7 @@
     </section>
 
     <section class="map">
-
+      <h1>OVERVIEW OF ACTIVITIES AS OF NOVEMBER 2018</h1>
     </section>
 
     <section class="map-highlighted bangladesh">
@@ -517,27 +517,29 @@
       const isHalfShown = slideInAt > sliderImage.offsetTop;
       const isNotScrolledPast = window.scrollY < imageBottom;
 
+      const timer = 500;
+
 
       if(isHalfShown && isNotScrolledPast) {
         sliderImage.classList.add('active');
 
-        animateValue('bangladesh-figure', 0, 18, 3000);
-        animateValue('bangladesh-hubs', 1000, 29932, 3000);
+        animateValue('bangladesh-figure', 0, 18, timer);
+        animateValue('bangladesh-hubs', 1000, 29932, timer);
 
-        animateValue('car-figure', 0, 73, 3000);
-        animateValue('car-hubs', 500, 1748, 3000);
+        animateValue('car-figure', 0, 73, timer);
+        animateValue('car-hubs', 500, 1748, timer);
 
-        animateValue('libya-figure', 0, 16, 3000);
-        animateValue('libya-hubs', 0, 1.6, 3000);
+        animateValue('libya-figure', 0, 16, timer);
+        animateValue('libya-hubs', 0, 1.6, timer);
 
-        animateValue('ssd-figure', 0, 44, 3000);
-        animateValue('ssd-hubs', 1000, 23019, 3000);
+        animateValue('ssd-figure', 0, 44, timer);
+        animateValue('ssd-hubs', 1000, 23019, timer);
 
-        animateValue('syria-figure', 100, 4288, 3000);
-        animateValue('syria-hubs', 1000, 16720, 3000);
+        animateValue('syria-figure', 100, 4288, timer);
+        animateValue('syria-hubs', 1000, 16720, timer);
 
-        animateValue('yemen-figure', 0, 15, 3000);
-        animateValue('yemen-hubs', 100, 7500, 3000);
+        animateValue('yemen-figure', 0, 15, timer);
+        animateValue('yemen-hubs', 100, 7500, timer);
       } else {
         sliderImage.classList.remove('active');
       }

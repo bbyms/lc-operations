@@ -233,7 +233,15 @@ strong {
     background-image: url('images/WorldConOps@2x.png');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.map h1 {
+  color: white;
+  font-size: 3rem;
+  margin: 30px 50px;
 }
 
 /* Map highlighted ------------------------------------------------------------- */
