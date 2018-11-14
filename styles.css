@@ -235,12 +235,12 @@ strong {
     background-repeat: no-repeat;
     background-position: top;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .map h1 {
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 30px 50px;
 }
 
@@ -289,8 +289,24 @@ strong {
   background-image: url('images/car.svg');
 }
 
+.drc {
+  background-image: url('images/drc.svg');
+}
+
+.iraq {
+  background-image: url('images/iraq.svg');
+}
+
+.indonesia {
+  background-image: url('images/indonesia.svg');
+}
+
 .libya {
   background-image: url('images/libya.svg');
+}
+
+.nigeria {
+  background-image: url('images/nigeria.svg');
 }
 
 .syria {
