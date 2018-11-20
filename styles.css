@@ -228,14 +228,23 @@ strong {
 /* Map ------------------------------------------------------------------------- */
 
 .map {
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-color: var(--gray);
-    background-image: url('images/WorldConOps@2x.png');
+    background-image: url('images/WorldConOps@2x.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
     align-items: flex-end;
     justify-content: center;
+    position: relative;
+}
+
+.legend {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
 }
 
 .map h1 {
