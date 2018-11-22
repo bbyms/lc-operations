@@ -177,6 +177,12 @@ strong {
   padding-bottom: 10px;
 }
 
+@media screen and (max-width: 600px) {
+  .content {
+    text-align: left;
+  }
+}
+
 /* Intro ----------------------------------------------------------------------- */
 
 .intro h1 {
@@ -219,29 +225,55 @@ strong {
 }
 
 @media screen and (max-width: 600px) {
-  .cover h1  {
+  .cover {
+    background-attachment: scroll;
+    background-position: center;
+  }
+
+  .cover h1 {
     padding: 10px 20px;
     font-size: 2rem;
   }
+
+  .cover h3 {
+    font-size: 1.2rem;
+  }
 }
 
+/* Animation ---------------------------------------------------------------------- */
+@keyframes slide {
+  0% {
+    background-position: left;
+  }
+
+  50% {
+    background-position: center;
+  }
+
+  100% {
+    background-position: right;
+  }
+}
 /* Map ------------------------------------------------------------------------- */
 
 .map {
-    /* background-attachment: fixed; */
-    background-color: var(--gray);
-    background-image: url('images/WorldConOps@2x.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top;
-    align-items: flex-end;
-    justify-content: center;
-    position: relative;
+  /* background-attachment: fixed; */
+  background-color: var(--gray);
+  background-image: url('images/WorldConOps@2x.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
 }
 
 .legend {
+  background-image: url('images/legend.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
   height: 300px;
-  width: 300px;
+  width: 150px;
   position: absolute;
   left: 30px;
   bottom: 30px;
@@ -251,6 +283,37 @@ strong {
   color: white;
   font-size: 2rem;
   margin: 30px 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .legend {
+    background-image: url('images/legend_horizontal.svg');
+    background-repeat: no-repeat;
+    width: 100%;
+    position: static;
+    height: 100px;
+    grid-row: 1;
+    align-self: flex-start;
+    margin-top: 20px;
+  }
+
+  .map  {
+    background-position: top;
+    background-size: cover;
+    padding: 20px;
+    justify-content: flex-end;
+    display: grid;
+    grid-template-rows: 1fr 150px auto;
+    grid-row-gap: 20px;
+    animation: slide 30s infinite;
+    transition: all 5s ease-in-out;
+    /* min-height: 70vh; */
+  }
+
+  .map h1 {
+    margin: 0;
+    grid-row: 3;
+  }
 }
 
 /* Map highlighted ------------------------------------------------------------- */
