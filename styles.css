@@ -178,7 +178,7 @@ strong {
   padding-bottom: 10px;
 }
 
-.content h1.prep {
+.content h1.prep-title {
 	border-bottom: 5px solid var(--green);
 }
 
@@ -213,7 +213,7 @@ strong {
 
 .cover {
   background-attachment: fixed;
-  background-image: url('images/SSD.JPG');
+  background-image: url('images/cover.jpg');
   background-size: cover;
   align-items: flex-end;
   text-align: center;
@@ -335,12 +335,6 @@ strong {
   padding: 50px 0;
 }
 
-.map-prep {
-	background-color: var(--green);
-	min-height: 0;
-	padding: 50px 0;
-  }
-
 .map-highlighted .grid {
   text-align: center;
   width: 960px;
@@ -403,6 +397,10 @@ strong {
 .yemen {
   background-image: url('images/yemen.svg');
 }
+
+.prep {
+	background-color: var(--green);
+  }
 
 /* Back cover ------------------------------------------------------------------ */
 
