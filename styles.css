@@ -3,6 +3,7 @@
   --gray: #616161;
   --link: #fff;
   --black: #000;
+  --green: #26a69a;
 }
 
 html {
@@ -177,6 +178,10 @@ strong {
   padding-bottom: 10px;
 }
 
+.content h1.prep {
+	border-bottom: 5px solid var(--green);
+}
+
 @media screen and (max-width: 600px) {
   .content {
     text-align: left;
@@ -329,6 +334,12 @@ strong {
   min-height: 0;
   padding: 50px 0;
 }
+
+.map-prep {
+	background-color: var(--green);
+	min-height: 0;
+	padding: 50px 0;
+  }
 
 .map-highlighted .grid {
   text-align: center;
