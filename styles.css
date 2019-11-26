@@ -227,6 +227,11 @@ strong {
   font-weight: 400;
   border-bottom: 5px solid white;
   padding: 20px 0;
+  text-shadow: 0px 5px 20px #000;
+}
+
+.cover h3 {
+	text-shadow: 0px 5px 20px #000;
 }
 
 @media screen and (max-width: 600px) {
@@ -237,11 +242,11 @@ strong {
 
   .cover h1 {
     padding: 10px 20px;
-    font-size: 2rem;
+	font-size: 2rem;
   }
 
   .cover h3 {
-    font-size: 1.2rem;
+	font-size: 1.2rem;
   }
 }
 
@@ -264,13 +269,14 @@ strong {
 .map {
   /* background-attachment: fixed; */
   background-color: var(--gray);
-  background-image: url('images/WorldConOps@2x.svg');
+  background-image: url('images/conops@150x.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
   align-items: flex-end;
   justify-content: center;
   position: relative;
+  min-height: 80vh;
 }
 
 .legend {
@@ -348,6 +354,10 @@ strong {
   color: white;
 }
 
+.no-margin {
+	margin-bottom: 0;
+}
+
 @media screen and (max-width: 600px) {
   .map-highlighted h1  {
     margin-bottom: 0;
@@ -400,7 +410,16 @@ strong {
 
 .prep {
 	background-color: var(--green);
-  }
+}
+
+.strategy {
+	background-color: rgba(0,0,0, .05);
+	padding: 30px;
+}
+
+.strategy img {
+	width: 200px;
+}
 
 /* Back cover ------------------------------------------------------------------ */
 
