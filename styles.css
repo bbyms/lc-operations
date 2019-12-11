@@ -237,7 +237,7 @@ strong {
 @media screen and (max-width: 600px) {
   .cover {
     background-attachment: scroll;
-    background-position: center;
+    background-position: -100px;
   }
 
   .cover h1 {
@@ -410,6 +410,8 @@ strong {
 
 .prep {
 	background-color: var(--green);
+	background-image: url('images/preparedness.svg');
+	background-size: 100px;
 }
 
 .strategy {
@@ -418,7 +420,28 @@ strong {
 }
 
 .strategy img {
-	width: 200px;
+	width: 400px;
+}
+
+@media screen and (max-width: 600px) {
+	.strategy img {
+		max-width: 100%;
+	}
+
+	.map-highlighted {
+		padding: 50px;
+	}
+
+	.align-right, 
+	.align-left {
+		float: none;
+		margin-left: 0;
+		margin-bottom: 15px;
+	}
+
+	.content img {
+		width: 100%;
+	}
 }
 
 /* Back cover ------------------------------------------------------------------ */
