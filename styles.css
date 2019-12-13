@@ -58,7 +58,7 @@ h1 {
 }
 
 a {
-  color: var(--link);
+  color: #fff;
   text-decoration: none;
 }
 
@@ -71,21 +71,21 @@ a {
 }
 
 .link:hover {
-  background-color: var(--link);
-  color: var(--red);
+  background-color: #fff;
+  color: #c0392b;
   transition: all ease-in-out .3s;
 }
 
 .link-red {
-  color: var(--red);
-  border-color: var(--red);
+  color: #c0392b;
+  border-color: #c0392b;
   font-size: 1rem;
   text-transform: uppercase;
 }
 
 .link-red:hover {
-  background-color: var(--red);
-  color: var(--link);
+  background-color: #c0392b;
+  color: #fff;
   transition: all ease-in-out .3s;
 }
 
@@ -96,13 +96,13 @@ p {
 }
 
 .lead {
-  color: var(--black);
+  color: #000;
   font-family: 'Merriweather', serif;
   font-size: 18px;
 }
 
 figcaption {
-  color: var(--black);
+  color: #000;
   font-family: 'Merriweather', serif;
   font-size: 14px;
   line-height: 1.6;
@@ -159,7 +159,7 @@ strong {
   padding: 30px;
   max-width: 960px;
   margin: auto;
-  color: var(--gray);
+  color: #c0392b;
   text-align: justify;
 }
 
@@ -174,12 +174,12 @@ strong {
 .content h1 {
   color: black;
   display: inline-block;
-  border-bottom: 5px solid var(--red);
+  border-bottom: 5px solid #c0392b;
   padding-bottom: 10px;
 }
 
 .content h1.prep-title {
-	border-bottom: 5px solid var(--green);
+	border-bottom: 5px solid #26a69a;
 }
 
 @media screen and (max-width: 600px) {
@@ -191,16 +191,16 @@ strong {
 /* Intro ----------------------------------------------------------------------- */
 
 .intro h1 {
-  color: var(--black);
-  border-bottom: 5px solid var(--red);
+  color: #000;
+  border-bottom: 5px solid #c0392b;
 }
 
 .intro p {
-  color: var(--gray);
+  color: #c0392b;
 }
 
 .intro .lead {
-  color: var(--black);
+  color: #000;
 }
 
 /* Country --------------------------------------------------------------------- */
@@ -268,7 +268,7 @@ strong {
 
 .map {
   /* background-attachment: fixed; */
-  background-color: var(--gray);
+  background-color: #c0392b;
   background-image: url('images/conops@150x.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -336,7 +336,7 @@ strong {
 }
 
 .map-highlighted {
-  background-color: var(--red);
+  background-color: #c0392b;
   min-height: 0;
   padding: 50px 0;
 }
@@ -409,7 +409,7 @@ strong {
 }
 
 .prep {
-	background-color: var(--green);
+	background-color: #26a69a;
 	background-image: url('images/preparedness.svg');
 	background-size: 100px;
 }
@@ -447,7 +447,7 @@ strong {
 /* Back cover ------------------------------------------------------------------ */
 
 .back {
-  background-color: var(--red);
+  background-color: #c0392b;
   flex-flow: column;
 }
 
